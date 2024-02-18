@@ -11,13 +11,19 @@ sources:
       columns:
         - name: objectid
           description: Unique identifier for each row
-          test:
+          tests:
             - unique
             - not_null
         - name: motive_power
           description: The type of vehicle
         - name: first_nz_registration_year
           description: The year the vehicle was first registered within NZ
+        - name: first_nz_registration_month
+          description: The month the vehicle was first registered within NZ
+        - name: make
+          description: The manufacturer company
+        - name: model
+          description: The vehicle model
     
     - name: ev_roaming_charging_stations_raw
       description: Raw data from the https://catalogue.data.govt.nz/dataset ev roaming charging stations, no data validation
@@ -25,7 +31,7 @@ sources:
       columns:
         - name: objectid
           description: Unique identifier for each row
-          test:
+          tests:
             - unique
             - not_null
             

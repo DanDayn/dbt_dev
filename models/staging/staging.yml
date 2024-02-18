@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: staging_ev_vehicle
+    description: Raw data condensed and data cleansed, specifically for EV's
+
+    columns:
+      - name: vehicle_id
+        description: Unique identifier per vehicle
+      - name: motive_power
+        description: The type of EV
+      - name: first_nz_registration_year
+        description: The year the vehicle was first registered within NZ
+      - name: first_nz_registration_month
+        description: The month the vehicle was first registered within NZ
+      - name: make
+        description: The manufacturer company
+      - name: model
+        description: The vehicle model
