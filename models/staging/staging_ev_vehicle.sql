@@ -3,6 +3,7 @@ with staging_motor_vehicle as (
         objectid as vehicle_id
         , motive_power as motive_power
         , cast(first_nz_registration_year as int) as registration_year
+        , cast(first_nz_registration_month as int) as registration_month
         , make as vehicle_company
         , model as vehicle_model
     from {{ source('raw', 'motor_vehicle_register_raw') }}
