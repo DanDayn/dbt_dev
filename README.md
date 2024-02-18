@@ -1,15 +1,15 @@
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+Small datamart for the FIRN case study related to electric vehicles
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### Main two datamarts
+
+- Vehicle Pipeline
+- Charging Station Pipeline
+
+#### KPI's
+
+- number of EV (specifically classified as plugin hybrids or full electric) # After the fact realized that EV = Electric Vehicle, so it's a double up in terms of naming, but it's a bit late to change now
+- number of charging stations
+- distance between two charging stations
+- number of EV's by brand/model (for car side)
+- distribution of charging stations (for charging station provider side)
