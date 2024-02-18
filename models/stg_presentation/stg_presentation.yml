@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_dim_ev_vehicle
+    description: Vehicle level information
+
+  - name: stg_dim_ev_charging_stations
+    description: List of all EV charging stations with associated information
+
+  - name: stg_fact_ev_vehicle_counts
+    description: Summarization of types of vehicles based on registation year and the type of vehicle
+
+  - name: stg_fact_charging_stations_distances
+    description: List of all EV charging stations and their distance compared to other charging stations
