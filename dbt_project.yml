@@ -38,8 +38,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   daniel_dbt:
     # Applies to all files under models/example/
-    example:
-      +materialized: table
+    staging:
+      materialized: table
+      +schema: staging
     stg_presentation:
-      +materialized: table
+      materialized: table
       +schema: stg_presentation
+    presentation:
+      materialized: table
+      +schema: presentation

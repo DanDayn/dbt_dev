@@ -1,0 +1,31 @@
+version: 2
+sources:
+  - name: raw
+    description: source raw files
+    database: daniel_dwh
+    schema: raw
+    tables:
+    - name: motor_vehicle_register_raw
+      description: Raw data from the https://catalogue.data.govt.nz/dataset motor vehicle register, no data validation
+
+      columns:
+        - name: objectid
+          description: Unique identifier for each row
+          test:
+            - unique
+            - not_null
+        - name: motive_power
+          description: The type of vehicle
+        - name: first_nz_registration_year
+          description: The year the vehicle was first registered within NZ
+    
+    - name: ev_roaming_charging_stations_raw
+      description: Raw data from the https://catalogue.data.govt.nz/dataset ev roaming charging stations, no data validation
+
+      columns:
+        - name: objectid
+          description: Unique identifier for each row
+          test:
+            - unique
+            - not_null
+            
